@@ -56,6 +56,7 @@ include('header.php');
 <!-- forget Email Send --->
 <?php
 if (isset($_POST['forget_submit'])) {
+echo "testing";
     $email = addslashes($_POST['email']);
     $mySQL = "select * from register WHERE email='$email'";
     $tmpSQL = mysqli_query($conn, $mySQL);
